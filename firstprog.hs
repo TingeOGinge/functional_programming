@@ -1,0 +1,8 @@
+mult2 :: Int -> Int
+mult2 x = 2 * x
+
+mult4 :: Int -> Int
+mult4 x = mult2 (mult2 x)
+
+fac :: Int -> Int
+fac n = if n == 0 then 1 else n * fac(n - 1)
